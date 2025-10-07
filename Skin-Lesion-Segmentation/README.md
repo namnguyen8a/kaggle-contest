@@ -50,9 +50,6 @@ Dưới đây là mô tả chi tiết về hai submission đã được chọn �
 <summary>Click để xem Mã nguồn Suy luận Grand Ensemble</summary>
 
 ```python
-# ====================================================================
-# SKIN SEGMENTATION V-FINAL - GRAND ENSEMBLE (V8 + V9)
-# ====================================================================
 # PHẦN 1: CÀI ĐẶT, IMPORT VÀ CẤU HÌNH
 print(">>> [PHẦN 1] Bắt đầu cài đặt...")
 !pip install -q segmentation-models-pytorch albumentations timm scikit-image scikit-learn
@@ -115,7 +112,7 @@ def advanced_postprocess(mask, min_size=100):
     binary_mask = morphology.binary_closing(binary_mask, morphology.disk(3))
     return binary_mask.astype(np.uint8)
 
-# PHẦN 3: PIPELINE SUY LUẬN "GRAND ENSEMBLE"
+# PHẦN 3: PIPELINE SUY LUẬN
 models_v8 = []
 for fold in range(1, cfg.N_SPLITS + 1):
     model = create_model(cfg.V8_CONFIG['arch'], cfg.V8_CONFIG['encoder']).to(cfg.DEVICE)
@@ -170,10 +167,6 @@ submission_df.to_csv(submission_filename, index=False)
 <summary>Click để xem Mã nguồn Phiên bản 8</summary>
 
 ```python
-# ====================================================================
-# SKIN SEGMENTATION V8.1 (TRAINING) & V8.3 (INFERENCE)
-# ====================================================================
-
 # --------------------------------------------------------------------
 # PHẦN 1: CÀI ĐẶT, IMPORT VÀ CẤU HÌNH (CHO TRAINING)
 # --------------------------------------------------------------------
@@ -348,7 +341,7 @@ for fold in range(START_FOLD, cfg.N_SPLITS):
 print(f"\n✅ Training K-Fold V8.1 hoàn tất! Điểm Dice trung bình: {overall_val_dice/cfg.N_SPLITS:.4f}")
 
 # --------------------------------------------------------------------
-# PHẦN 4: PIPELINE SUY LUẬN TỐI THƯỢNG (TƯƠNG ĐƯƠNG V8.3)
+# PHẦN 4: PIPELINE SUY LUẬN
 # --------------------------------------------------------------------
 print("\n>>> [PHẦN 4] Bắt đầu pipeline suy luận tối thượng...")
 fold_models = []
