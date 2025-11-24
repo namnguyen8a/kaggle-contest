@@ -1,0 +1,1 @@
+{"repos": [{"repoId": "smp-hub/efficientnet-b0.imagenet", "repoType": "model", "commitHash": "1bbe7ecc1d5ea1d2058de1a2db063b8701aff314", "filePaths": ["model.safetensors", "config.json"]}]}

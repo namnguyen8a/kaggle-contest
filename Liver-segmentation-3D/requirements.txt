@@ -1,8 +1,0 @@
-numpy
-torch
-nibabel
-albumentations
-tqdm
-pandas
-matplotlib
-opencv-python-headless

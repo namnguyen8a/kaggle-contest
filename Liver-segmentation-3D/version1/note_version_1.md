@@ -3,8 +3,11 @@ Here is the detailed technical documentation for **Version 1** of your Liver Tum
 This serves as the foundation for future improvements.
 
 ---
+# Ref:
+- Training: https://www.kaggle.com/code/nnguyen26/aio2025-warm-up-liver-tumor-segmentation-v1/edit
+- Infer: https://www.kaggle.com/code/nnguyen26/liver-segment-infer-v1/edit
 
-# 📝 Project Report: Liver Segmentation - Version 1 (Baseline)
+# 📝 Project Report: Liver Segmentation - Version 1 (Baseline) - time 14147.6s
 **Status:** Baseline Established
 **Public Leaderboard Score:** `0.95766` (Dice Score)
 **Technique:** 2.5D Segmentation (Slice-by-Slice) with U-Net
