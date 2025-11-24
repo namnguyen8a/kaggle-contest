@@ -1,6 +1,6 @@
 # Ref:
 - https://www.kaggle.com/code/nnguyen2605/aio2025-warm-up-liver-tumor-segmentation-v6/edit (training)
-
+- https://www.kaggle.com/code/nnguyen2605/aio2025-warm-up-liver-tumor-segmentation-v6/log?scriptVersionId=281321407 (logs)
 ---
 
 # 📝 Experiment Report: Hybrid Loss Functions
@@ -13,7 +13,7 @@
 
 ---
 
-## 📊 Version 6: The "Robust Metric"
+## 📊 Version 6: The "Robust Metric" - time 23787.2s - score 0.96628
 **Strategy:** **0.6 Tversky Loss + 0.4 Lovász-Softmax Loss**
 
 ### 1. The Motivation
